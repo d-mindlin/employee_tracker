@@ -1,0 +1,37 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "migrate": "mysql db/election.db < db/schema.sql",
+    "seed": "mysql db/election.db < db/seeds.sql",
+    "db": "mysql db/election.db",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izabelacloud/Employee-Tracker.git"
+  },
+  "author": "Izabela Petrovicova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izabelacloud/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/izabelacloud/Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.1.0",
+    "knex": "^0.21.1",
+    "mysql": "^2.18.1",
+    "mysql-migrations": "^1.0.6",
+    "mysql2": "^2.1.0",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
